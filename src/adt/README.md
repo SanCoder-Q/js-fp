@@ -1,0 +1,33 @@
+# Algebraic data type
+
+> an algebraic data type is a kind of composite type, i.e., a type formed by combining other types.
+
+[Ref: wikipedia](https://en.wikipedia.org/wiki/Algebraic_data_type)
+
+## Product type: ordered compounded type
+
+A product type is always associate with logical conjunction.
+
+```typescript
+interface ProductExample1 {
+    lable1: string;
+    lable2: number;
+}
+
+type ProductExample2 = [ string, number ];
+```
+
+## Sum type: disjoint union type
+
+A sum type is always associate with logical disjunction.
+
+```typescript
+enum SumExample1 {
+    variant1,
+    variant2
+}
+
+type SumExample2 = 'variant1' | 'variant2'
+```
+
+
