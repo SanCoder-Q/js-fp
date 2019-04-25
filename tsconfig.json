@@ -3,7 +3,7 @@
     "target": "es5",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "lib": ["es6"],
