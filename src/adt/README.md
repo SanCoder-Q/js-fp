@@ -39,27 +39,9 @@ interface Variant2 {
 type SumExample3 = Variant1 | Variant2;
 ```
 
-## Examples
-
-```typescript
-type Nil = 'nil';
-type List<T> = Nil | [T, List<T>]
-const Nil: Nil = 'nil';
-
-const isNil = <T>(list: List<T>): list is Nil => list === Nil;
-
-const head = <T>(list: List<T>): T | null => isNil(list) ? null : list[0];
-
-const tail = <T>(list: List<T>): List<T> => isNil(list) ? Nil : list[1];
-
-const map = <T, U>(list: List<T>, f: (t: T) => U): List<U> =>
-  isNil(list) ? Nil : [ f(head(list)), map(tail(list), f) ];
-
-```
-
-
-
 ## Pattern match
+
+
 
 
 
