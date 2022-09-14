@@ -22,6 +22,12 @@ type ProductExample2 = [ string, number ];
 A sum type is always associate with logical disjunction.
 
 ```typescript
+class Base {}
+class Variant1 extends Base {}
+class Variant2 extends Base {}
+
+type SumExample = Base;
+
 enum SumExample1 {
     variant1,
     variant2
